@@ -9,6 +9,7 @@
   "scripts": {
     "html": "nunjucks -p src/html/ -o site/ index.njk",
     "css": "cpy --cwd src css/ ../site/",
-    "build": "npm-run-all --parallel html css"
+    "res": "cpy --cwd src res/ ../site/",
+    "build": "npm-run-all --parallel html css res"
   }
 }
